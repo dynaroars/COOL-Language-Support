@@ -9,29 +9,45 @@
 	"COOL_while": {
 		"prefix": "while",
 		"body": [
-			"while ${1:conditional} loop ${2:body} pool"
+			"while",
+			"\t${1:conditional}",
+			"loop",
+			"\t${0:body}",
+			"pool"
 		],
 		"descriptiion": "COOL: while"
 	},
 	"COOL_let": {
 		"prefix": "let",
 		"body": [
-			"let ${1:var}:${2:TYPE} in ${3:body}"
+			"let",
+			"\t${1:var}:${2:TYPE} <- ${3:initializer}",
+			"in",
+			"\t${0:body}",
+			""
 		],
 		"descriptiion": "COOL: let"
 	},
 	"COOL_case": {
 		"prefix": "case",
 		"body": [
-			"case ${1:expression} of ${2:var}:${3:TYPE} => ${4:expression}; esac"
+			"case ${1:expression} of",
+			"\t${2:var}:${3:TYPE} => ${0:expression};", 
+			"esac"
 		],
 		"descriptiion": "COOL: case"
+	},
+	"COOL_case_branch":{
+		"prefix": "case_branch",
+		"body": [
+			"${1:var}:${2:TYPE} => ${0:expression};"
+		]
 	},
 	"COOL_class_no_inherits": {
 		"prefix": "class",
 		"body": [
 			"class ${1:Name} {",
-			"",
+			"\t${0:body}",
 			"};"
 		],
 		"descriptiion": "COOL: class no inherits"
@@ -40,7 +56,7 @@
 		"prefix": "class",
 		"body": [
 			"class ${1:Name} inherits ${2:Parent}{",
-			"",
+			"\t${0:body}",
 			"};"
 		],
 		"descriptiion": "COOL: class inherits"
@@ -48,22 +64,22 @@
 	"COOL_attri_no_init":{
 		"prefix": "attri",
 		"body":[
-			"${1:var}:${2:TYPE};"
+			"${1:var}:${2:TYPE};$0"
 		],
 		"description": "COOL: attribute no init"
 	},
 	"COOL_attri_init":{
 		"prefix": "attri",
 		"body":[
-			"${1:var}:${2:TYPE} <- ${3:initializer};"
+			"${1:var}:${2:TYPE} <- ${0:initializer};"
 		],
 		"description": "COOL: attribute init"
 	},
 	"COOL_method":{
 		"prefix": "method",
 		"body":[
-			"${1:Name}(${2:formals}):${3:TYPE}{",
-			"",
+			"${1:Name}($2):${3:TYPE}{",
+			"$\t{0:body}",
 			"};"
 		],
 		"description": "COOL: attribute no init"
@@ -72,9 +88,9 @@
 		"prefix": "main",
 		"body":[
 			"class Main{",
-			"main():Int{",
-			"",
-			"};",
+			"\tmain():Int{",
+			"\t\t${0:body}",
+			"\t};",
 			"};"
 		]
 	}
