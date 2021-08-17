@@ -41,6 +41,9 @@
 		"languages": [
 			{
 				"id": "cool",
+				"extensions": [
+					".cl"
+				],
 				"filenamePatterns": [
 					"*.cl"
 				],
@@ -52,6 +55,12 @@
 				"language": "cool",
 				"scopeName": "source.cool",
 				"path": "./syntaxes/cool-highlight.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "cool",
+				"path": "./snippets/snippet.json"
 			}
 		]
 	},
