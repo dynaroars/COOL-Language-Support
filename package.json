@@ -8,7 +8,7 @@
 	"author": "Linhan",
 	"publisher": "Linhan",
 	"license": "MIT",
-	"version": "0.0.6",
+	"version": "0.0.8",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/unsat/COOL-Language-Support"
@@ -18,7 +18,8 @@
 		"COOL",
 		"Language Support",
 		"Classroom Object Oriented Language",
-		"language server"
+		"language server",
+		"cool language support"
 	],
 	"engines": {
 		"vscode": "^1.43.0"
