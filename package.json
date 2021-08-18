@@ -1,13 +1,13 @@
 {
-	"name": "cool-language-server",
-	"description": "A language server for COOL",
+	"name": "cool-language-support",
+	"description": "Language support for COOL(Classroom Object Oriented Language)",
 	"author": "Linhan",
 	"publisher": "Linhan",
 	"license": "MIT",
 	"version": "0.0.5",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/SWVM/cool-lsp"
+		"url": "https://github.com/unsat/COOL-Language-Support"
 	},
 	"categories": [],
 	"keywords": [
