@@ -1,8 +1,8 @@
 # COOL Language Support
-provides basic language support for COOL(Classroom Object Oriented Language), includiing static error checking and auto-compeltion.
+COOL(Classroom Object Oriented Language) language support extension, provides static error checking and auto-compeltion compatability.
 
 ## Error checking
-This extension performs static analysis automatically, provides you with real-time feedback of your program. Whenever a lexical/syntax/typing error is made, an error message will be generated immediatly.
+This extension performs static analysis automatically, provides you with real-time feedback. Whenever a lexical/syntax/typing error is made, an error message will be generated immediatly.
 ![alt-text](https://github.com/unsat/COOL-Language-Support/blob/main/GIFs/error_message.gif)
 
 
