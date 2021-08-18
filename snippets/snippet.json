@@ -55,7 +55,7 @@
 	"COOL_class_inherits": {
 		"prefix": "class",
 		"body": [
-			"class ${1:Name} inherits ${2:Parent}{",
+			"class ${1:Name} inherits ${2:Object}{",
 			"\t${0:body}",
 			"};"
 		],
@@ -78,8 +78,8 @@
 	"COOL_method":{
 		"prefix": "method",
 		"body":[
-			"${1:Name}($2):${3:TYPE}{",
-			"$\t{0:body}",
+			"${1:name}($2):${3:TYPE}{",
+			"\t${0:body}",
 			"};"
 		],
 		"description": "COOL: attribute no init"
