@@ -9,3 +9,8 @@ This extension performs static analysis automatically, provides you with real-ti
 ## Auto-Completion
 This extension also provides auto-completion support, check this out.
 ![alt-text](https://github.com/unsat/COOL-Language-Support/blob/main/GIFs/COOL_snippet.gif)
+
+
+## Note
+-	This extension is built based on the lsp-sample by Microsoft. For detailes, check "https://github.com/microsoft/vscode-extension-samples/tree/main/lsp-sample"
+-	The COOL interpretor submodule used in this extension "https://github.com/unsat/COOL-Compiler-In-Py"
