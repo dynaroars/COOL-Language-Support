@@ -13,7 +13,7 @@
 		"type": "git",
 		"url": "https://github.com/unsat/COOL-Language-Support"
 	},
-	"categories": [],
+	"categories": ["Programming Languages", "Snippets", "Themes","Language Packs"],
 	"keywords": [
 		"COOL",
 		"Language Support",
