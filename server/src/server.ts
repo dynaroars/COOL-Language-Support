@@ -16,7 +16,6 @@ import {
 	TextDocumentSyncKind,
 	InitializeResult
 } from 'vscode-languageserver/node';
-
 import {
 	TextDocument
 } from 'vscode-languageserver-textdocument';
@@ -218,7 +217,29 @@ connection.onCompletion(
 		// The pass parameter contains the position of the text document in
 		// which code complete got requested. For the example we ignore this
 		// info and always provide the same completion items.
-		return [];
+
+		// let doc = documents.get(_textDocumentPosition.textDocument.uri);
+		// if (!doc) {
+		// 	return [];
+		// }
+		// let text = doc.getText().split("\n",-1);
+		// let char = text[_textDocumentPosition.position.line].charAt(_textDocumentPosition.position.character-1)
+
+
+		// return [
+		// 	{
+		// 		label: "Type" + char,
+		// 		kind: CompletionItemKind.Text,
+		// 		data: 1
+		// 	},
+		// 	{
+		// 		label: 'JavaScript',
+		// 		kind: CompletionItemKind.Text,
+		// 		data: 2
+		// 	}
+		// ];
+		
+		return []
 	}
 );
 
