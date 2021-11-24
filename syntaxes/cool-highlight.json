@@ -41,37 +41,15 @@
 		]
 	  },
 	  "class": {
-		"begin": "((?i:class))\\s+([A-Z][A-Za-z0-9_]*)(\\s+((?i:inherits))\\s+([A-Z][A-Za-z0-9_]*))?\\b",
-		"beginCaptures": {
-		  "1": {
-			"name": "storage.type.cool"
-		  },
-		  "2": {
-			"name": "entity.name.type.class.cool"
-		  },
-		  "4": {
-			"name": "keyword.operator.cool"
-		  },
-		  "5": {
-			"name": "entity.name.type.class.cool"
-		  }
-		},
-		"end": "}",
-		"name": "meta.class.cool",
-		"patterns": [
-		  {
-			"begin": "{",
-			"end": "(?=})",
-			"name": "meta.class.body.cs",
-			"patterns": [
-			  {
-				"include": "#method"
-			  },
-			  {
-				"include": "#code"
-			  }
-			]
-		  }
+		"patterns":[
+			{
+				"match": "class",
+				"name":  "storage.type.cool"
+			},
+			{
+				"match": "[A-Z][A-Za-z0-9_]*",
+				"name":  "entity.name.type.class.cool"
+			}
 		]
 	  },
 	  "code": {
@@ -95,9 +73,16 @@
 			"include": "#keywords"
 		  },
 		  {
+			"include":"#var"
+		  },
+		  {
 			"include": "#method"
 		  }
 		]
+	  },
+	  "var": {
+		"match":"[a-z][A-Za-z0-9_]*",
+		"name": "variable.other.cool"
 	  },
 	  "line_comment": {
 		"begin": "--",
@@ -192,7 +177,12 @@
 				"name": "storage.type.cool"
 			  }
 			}
+		  },
+		  {
+			"match": ".[a-z][A-Za-z0-9_]*",
+			"name": "entity.name.function.cool"
 		  }
+
 		]
 	  }
 	}
