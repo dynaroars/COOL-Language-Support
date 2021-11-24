@@ -73,16 +73,9 @@
 			"include": "#keywords"
 		  },
 		  {
-			"include":"#var"
-		  },
-		  {
 			"include": "#method"
 		  }
 		]
-	  },
-	  "var": {
-		"match":"[a-z][A-Za-z0-9_]*",
-		"name": "variable.other.cool"
 	  },
 	  "line_comment": {
 		"begin": "--",
@@ -177,10 +170,6 @@
 				"name": "storage.type.cool"
 			  }
 			}
-		  },
-		  {
-			"match": ".[a-z][A-Za-z0-9_]*",
-			"name": "entity.name.function.cool"
 		  }
 
 		]
