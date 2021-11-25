@@ -1,7 +1,7 @@
 # COOL Language Support
 
 ## Overview
-This extension aims to make COOL more accessible to those who are learning it, leverage the burden of repeated manual works. 
+This extension aims to make COOL more accessible to those who are learning it, leverage the burden of repeated manual works. It can be installed from the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=Linhan.cool-language-support)!
 
 It provides support for [COOL(Classroom Object Oriented Language)](http://theory.stanford.edu/~aiken/software/cool/cool.html), a programming language designed by [Alexander Aiken](http://theory.stanford.edu/~aiken/) at Stanford. 
 
