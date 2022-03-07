@@ -1,0 +1,15 @@
+/cool.mac.bigsur.exe
+/.vscode
+*.cl
+*.cl-lex
+*.cl-type
+*.cl-ast
+parsetab.py
+parser.out
+cool.mac.bigsur.exe
+/Language-support/client/node_modules/*
+/Language-support/client/out/*
+/Language-support/server/node_modules/*
+/Language-support/server/out/*
+/Language-support/node_modules/*
+/.DS_Store
