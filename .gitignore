@@ -1,6 +1,7 @@
 out
 node_modules
 client/server
+cool_tests
 .vscode-test
 .DS_Store
 .eslintignore
