@@ -21,7 +21,6 @@ It provides support for [COOL(Classroom Object Oriented Language)](http://theory
  ![alt-text](https://raw.githubusercontent.com/unsat/COOL-Language-Support/main/GIFs/COOL_snippet.gif)
 
 ## Note
- - This extension is built based on the lsp-sample by Microsoft. For details, check "https://github.com/microsoft/vscode-extension-samples/tree/main/lsp-sample"
- - The COOL interpreter submodule used in this extension "https://github.com/unsat/COOL-Compiler-In-Py"
+ - This extension is built based on the [lsp-sample by Microsoft](https://github.com/microsoft/vscode-extension-samples/tree/main/lsp-sample).
  - The syntax higlight feature is based on [language-cool](https://marketplace.visualstudio.com/items?itemName=maoguangming.cool) by Guangming Mao.
  - Feel free to leave a comment!
