@@ -8,10 +8,10 @@
 	"author": "Linhan",
 	"publisher": "Linhan",
 	"license": "MIT",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/unsat/COOL-Language-Support"
+		"url": "https://github.com/dynaroars/COOL-Language-Support"
 	},
 	"categories": ["Programming Languages", "Snippets", "Themes","Language Packs"],
 	"keywords": [
