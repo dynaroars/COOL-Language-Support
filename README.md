@@ -7,7 +7,6 @@ It provides support for [COOL(Classroom Object Oriented Language)](http://theory
 
 
 
-
 ## Features:
 
 - ### Static error checking
