@@ -10,7 +10,7 @@
 ##################### ##################### ###############
 import argparse
 import os
-from sys import argv
+import sys
 from functools import reduce
 from io import StringIO
 

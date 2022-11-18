@@ -151,6 +151,8 @@ async function validateTextDocument(textDocument: TextDocument): Promise<void> {
 		cool_location = __dirname + "/Cool_win/Cool";
 	}else if(process.platform == "darwin"){
 		cool_location = __dirname + "/Cool_mac/Cool";
+	}else if(process.platform == "linux"){
+		cool_location = __dirname + "/Cool_linux/Cool";
 	}else{
 		connection.sendDiagnostics({ uri: textDocument.uri, diagnostics });
 		return
