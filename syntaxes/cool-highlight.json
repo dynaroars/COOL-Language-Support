@@ -71,9 +71,6 @@
 		  },
 		  {
 			"include": "#keywords"
-		  },
-		  {
-			"include": "#method"
 		  }
 		]
 	  },
@@ -140,31 +137,6 @@
 			"match": "\\b(in|inherits|isvoid|let|new|of|not)\\b",
 			"name": "keyword.operator.cool"
 		  }
-		]
-	  },
-	  "method": {
-		"patterns": [
-		  {
-			"match": "\\b([a-z][A-Za-z0-9_]*)\\s*\\(\\s*((?:[a-z][A-Za-z0-9_]*\\s*:\\s*[A-Z][A-Za-z0-9_]*)(?:\\s*,\\s*[a-z][A-Za-z0-9_]*\\s*:\\s*[A-Z][A-Za-z0-9_]*)*)?\\s*\\)\\s*:\\s*([A-Z][A-Za-z0-9_]*)\\b",
-			"name": "meta.method.cool",
-			"captures": {
-				"1": { "name": "entity.name.function.cool" },
-				"2": { 
-					"patterns": [
-							{
-								"match": "\\b([a-z][A-Za-z0-9_]*)\\s*:\\s*([A-Z][A-Za-z0-9_]*)",
-								"captures": {
-									"1": { "name": "variable.parameter.cool" },
-									"2": { "name": "entity.name.type.class.cool" }
-								}
-							}
-						]
-					},
-				"3": { "name": "entity.name.type.class.cool" }
-			}
-
-		  }
-
 		]
 	  }
 	}
