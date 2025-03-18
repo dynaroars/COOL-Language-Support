@@ -47,8 +47,8 @@
 				"name":  "storage.type.cool"
 			},
 			{
-				"match": "[A-Z][A-Za-z0-9_]*",
-				"name":  "entity.name.type.class.cool"
+				"match": "(?<=:\\s*)\\b[A-Z][A-Za-z0-9_]*\\b",
+				"name": "entity.name.type.class.cool"
 			}
 		]
 	  },
@@ -79,17 +79,12 @@
 	  },
 	  "line_comment": {
 		"begin": "--",
-		"end": "$\\n?",
+		"end": "$",
 		"name": "comment.line.double-dash.cool"
-	  },
-		  "sharp_comment": {
-		"begin": "#",
-		"end": "$\\n?",
-		"name": "comment.line.sharp.cool"
 	  },
 	  "block_comment": {
 		"begin": "\\(\\*",
-		"end": "\\*\\)\\n?",
+		"end": "\\*\\)",
 		"name": "comment.block.documentation.cool",
 		"patterns": [
 		  {
@@ -101,9 +96,6 @@
 		"patterns": [
 		  {
 			"include": "#line_comment"
-		  },
-				  {
-			"include": "#sharp_comment"
 		  },
 		  {
 			"include": "#block_comment"
