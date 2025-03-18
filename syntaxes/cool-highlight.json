@@ -35,8 +35,8 @@
 			"name": "support.function.cool"
 		  },
 		  {
-			"match": "(self|SELF_TYPE)",
-			"name": "variable.language.cool"
+			"match": "\\bSELF_TYPE\\b",
+			"name": "entity.name.type.class.cool"
 		  }
 		]
 	  },
@@ -145,28 +145,24 @@
 	  "method": {
 		"patterns": [
 		  {
-			"match": "\\b([a-z][A-Za-z0-9_]*)\\s*\\(\\s*(?:([a-z][A-Za-z0-9_]*)\\s*:\\s*([A-Z][A-Za-z0-9_]*))?(?:\\s*,\\s*([a-z][A-Za-z0-9_]*)\\s*:\\s*([A-Z][A-Za-z0-9_]*))*\\s*\\)\\s*:\\s*([A-Z][A-Za-z0-9_]*)\\b",
+			"match": "\\b([a-z][A-Za-z0-9_]*)\\s*\\(\\s*((?:[a-z][A-Za-z0-9_]*\\s*:\\s*[A-Z][A-Za-z0-9_]*)(?:\\s*,\\s*[a-z][A-Za-z0-9_]*\\s*:\\s*[A-Z][A-Za-z0-9_]*)*)?\\s*\\)\\s*:\\s*([A-Z][A-Za-z0-9_]*)\\b",
 			"name": "meta.method.cool",
 			"captures": {
-			  "1": {
-				"name": "entity.name.function.cool"
-			  },
-			  "2": {
-				"name": "variable.parameter.cool"
-			  },
-			  "3": {
-				"name": "storage.type.cool"
-			  },
-			  "4": {
-				"name": "entity.name.type.class.cool"
-			  },
-			  "5": {
-				"name": "storage.type.cool"
-			  },
-			  "6": {
-				"name": "storage.type.cool"
-			  }
+				"1": { "name": "entity.name.function.cool" },
+				"2": { 
+					"patterns": [
+							{
+								"match": "\\b([a-z][A-Za-z0-9_]*)\\s*:\\s*([A-Z][A-Za-z0-9_]*)",
+								"captures": {
+									"1": { "name": "variable.parameter.cool" },
+									"2": { "name": "entity.name.type.class.cool" }
+								}
+							}
+						]
+					},
+				"3": { "name": "entity.name.type.class.cool" }
 			}
+
 		  }
 
 		]
