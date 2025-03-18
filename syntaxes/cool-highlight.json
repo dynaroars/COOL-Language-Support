@@ -87,9 +87,14 @@
 		"end": "\\*\\)",
 		"name": "comment.block.documentation.cool",
 		"patterns": [
-		  {
-			"include": "#block_comment"
-		  }
+		{
+		"match": "[^*]+",
+		"name": "comment.block.content.cool"
+		},
+		{
+		"match": "\\*",
+		"name": "comment.block.ignore.cool"
+		}
 		]
 	  },
 	  "comments": {
