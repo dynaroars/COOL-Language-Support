@@ -47,7 +47,7 @@
 				"name":  "storage.type.cool"
 			},
 			{
-				"match": "(?<=:\\s*)\\b[A-Z][A-Za-z0-9_]*\\b",
+				"match": "\\b[A-Z][a-zA-Z0-9_]*\\b",
 				"name": "entity.name.type.class.cool"
 			}
 		]
@@ -158,7 +158,7 @@
 				"name": "storage.type.cool"
 			  },
 			  "4": {
-				"name": "variable.parameter.cool"
+				"name": "entity.name.type.class.cool"
 			  },
 			  "5": {
 				"name": "storage.type.cool"
